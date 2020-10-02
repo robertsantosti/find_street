@@ -33,6 +33,7 @@ form.addEventListener("submit", event => {
   searched.push(cepInput.value);
 
   cepInput.value = null;
+  cepInput.focus();
 
   this.get(url);
   return;
