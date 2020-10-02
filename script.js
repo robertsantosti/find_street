@@ -1,6 +1,9 @@
 const endpoint = "https://viacep.com.br/ws/value/json/";
+
+const body = document.querySelector("body");
 const form = document.querySelector("#form-cep");
 const list = document.querySelector("#results");
+const switchTheme = document.querySelector("#switchTheme");
 
 const searched = [];
 
@@ -45,3 +48,14 @@ function renderListElement(value) {
 
   list.appendChild(item);
 }
+
+switchTheme.addEventListener("click", event => {
+  event.preventDefault();
+
+  if (body.classList.contains("darkmode")) {
+    body.classList.remove("darkmode");
+    return;
+  }
+
+  body.classList.add("darkmode");
+});
