@@ -10,23 +10,25 @@
   <body>
     <h1>Descubra o nome da rua</h1>
 
-    <form action="" id="form-cep">
-      <div class="box-input">
-        <input
-          type="number"
-          minlength="8"
-          maxlength="8"
-          required
-          placeholder="Digite o cep..."
-          id="cep"
-        />
-        <button type="submit"><span class="fas fa-search"></span></button>
+    <main>
+      <form action="" id="form-cep">
+        <div class="box-input">
+          <input
+            type="number"
+            minlength="8"
+            maxlength="8"
+            required
+            placeholder="Digite o cep..."
+            id="cep"
+          />
+          <button type="submit"><span class="fas fa-search"></span></button>
+        </div>
+      </form>
+  
+      <div>
+        <ol id="results"></ul>
       </div>
-    </form>
-
-    <div>
-      <ol id="results"></ul>
-    </div>
+    </main>
 
     <footer>
       <p>
