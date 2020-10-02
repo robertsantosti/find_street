@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste Consumo Api</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Descubra o nome da rua</h1>
+
+    <form action="" id="form-cep">
+      <div class="box-input">
+        <input
+          type="number"
+          minlength="8"
+          maxlength="8"
+          required
+          placeholder="Digite o cep..."
+          id="cep"
+        />
+        <button type="submit"><span class="fas fa-search"></span></button>
+      </div>
+    </form>
+
+    <div>
+      <ul id="results"></ul>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f82486fc2e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
