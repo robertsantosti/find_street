@@ -48,17 +48,59 @@ form input {
 form button {
   border: 0;
   padding: 0 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   background-color: #333;
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
-ul {
-  list-style: none;
+ol {
+  overflow-y: scroll;
+  height: 20rem;
+  width: 30rem;
+  background-color: #fff;
+  padding: 1rem;
+  list-style-position: inside;
+  border-radius: 1rem;
+  box-shadow: 3px 5px 20px #0005;
 }
 
-ul li {
-  font-size: 1.5rem;
+ol li {
+  font-size: 1.25rem;
   font-weight: 300;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 1rem 0;
+  background-color: #555555;
+  width: 100%;
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-links {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+}
+
+footer .social-links a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(155, 155, 155, 0.8);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
