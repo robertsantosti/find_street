@@ -142,13 +142,18 @@ footer .social-links a.fa-linkedin:hover {
   position: absolute;
   top: 10px;
   left: 10px;
-  padding: 1rem 2rem;
   font-size: 2rem;
   color: #fff;
   background-color: #000000;
   border: 0;
-  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
   box-shadow: 1px 1px 10px #000;
+  opacity: 0.5;
+}
+
+#switchTheme:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 700px) {
