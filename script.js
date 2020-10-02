@@ -1,4 +1,4 @@
-const endpoint = "http://viacep.com.br/ws/value/json/";
+const endpoint = "https://viacep.com.br/ws/value/json/";
 const form = document.querySelector("#form-cep");
 const list = document.querySelector("#results");
 
