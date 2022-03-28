@@ -1,55 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ache o nome da rua</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Find Street</title>
   </head>
   <body>
-    <h1>Descubra o nome da rua</h1>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Findstreet <small>v2.0.0</small></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <form class="d-flex" id="form-cep">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Digite o CEP"
+                aria-label="Busca"
+                id="cep"
+              />
+              <button class="btn btn-primary" type="submit">
+                <span class="fas fa-search"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main>
-      <form action="" id="form-cep">
-        <div class="box-input">
-          <input
-            type="number"
-            required
-            placeholder="Digite o cep..."
-            min="0"
-            max="99999999"
-            id="cep"
-            required
-          />
-          <button type="submit"><span class="fas fa-search"></span></button>
+      <div class="container">
+        <div class="nav justify-content-end my-3">
+          <button class="btn btn-danger shadow" id="btn-clean">
+            <span class="fas fa-trash"></span>
+          </button>
         </div>
-      </form>
-  
-      <div>
-        <ol id="results"></ul>
-      </div>
 
-      <button id="switchTheme" title="Switch darkmode">
-        <span class="fas fa-lightbulb"></span>
-      </button>
+        <table
+          class="shadow table table-striped table-bordered"
+          id="table-enderecos"
+        >
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">CEP</th>
+              <th scope="col">Endereço</th>
+              <th scope="col">Bairro</th>
+              <th scope="col">Cidade/Estado</th>
+            </tr>
+          </thead>
+          <tbody id="enderecos-tbody"></tbody>
+        </table>
+
+        <p id="start-wrapper" class="text-center text-muted">
+          Você ainda nao buscou nenhum endereço, utilize o campo CEP para
+          iniciar a busca.
+        </p>
+      </div>
     </main>
 
-    <footer>
-      <p>
-        Criado por Robert Santos - Estação Hack from Facebook
-      </p>
-
-      <div class="social-links">
-        <a href="https://github.com/robertsantosti" rel="noopener noreferrer" target="_blank" class="fab fa-github"></a>
-        <a href="https://www.linkedin.com/in/robertsantosti" rel="noopener noreferrer" target="_blank" class="fab fa-linkedin"></a>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://kit.fontawesome.com/f82486fc2e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
