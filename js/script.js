@@ -25,11 +25,11 @@ if (!!listaEnderecos && listaEnderecos.length > 0) {
   btnClean.classList.add("d-block");
 }
 
-function filtro(cep) {
-  return listaEnderecos.filter(
-    (endereco) => normalizeString(endereco.cep) === normalizeString(cep)
-  );
-}
+// function filtro(cep) {
+//   return listaEnderecos.filter(
+//     (endereco) => normalizeString(endereco.cep) === normalizeString(cep)
+//   );
+// }
 
 function normalizeString(str) {
   return str.replace("-", "").trim();
