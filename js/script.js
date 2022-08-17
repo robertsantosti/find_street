@@ -118,3 +118,5 @@ btnClean.addEventListener("click", (e) => {
   startWrapper.classList.remove("d-none");
   startWrapper.classList.add("d-block");
 });
+
+//Comentario
